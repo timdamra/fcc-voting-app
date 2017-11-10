@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  a(class="center-align waves-effect waves-teal btn-flat montserrat-large", href="/profile/create") Create New Poll
+  if polls.length === 0
+    h3 No polls to display
+  else
+    ul
+      each val in polls
+        li(class="list")
+          a(class="profile-links", data-id=val._id)= val.title

@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  div(class="centerize")
+    h3(class="montserrat-large center-align") #{poll.title}
+    canvas(id="barChart", width="400", height="400", data-poll=poll)
+    div(class="centerize")
+      h4 Cast Your Vote:
+      div(class="optionsform")
+  script(src="/js/chartConfig.js")

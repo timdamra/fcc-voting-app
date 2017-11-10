@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  h5 #{poll.title}
+  h5 Enter new title or new options below:
+  div(class="row")
+    form(class="col s12", action= `/edit/${poll._id}?_method=PATCH`, method="POST")
+      div(class="input-field col s6")
+        input(placeholder="New poll name?", class="validate", name="title")
+        textarea(placeholder="New options added here seperated by comma's", class="materialize-textarea", name="options")
+        button(class="center-align waves-effect waves-teal btn-flat montserrat-large", href="/profile/create") Submit

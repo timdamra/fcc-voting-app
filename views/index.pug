@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  div(class="centerize")
+    h3(class="montserrat-large center-align") Your Vote Counts!
+    ul
+      each val in polls
+        li(class="list")
+          a(class="links", data-id=val._id)= val.title

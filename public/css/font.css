@@ -1,0 +1,39 @@
+.blackops {
+  font-family: 'Black Ops One', cursive;
+  color: white;
+}
+
+#barChart {
+  background-color: gray;
+  border-radius: 6px;
+  /*   Check out the fancy shadow  on this one */
+  box-shadow: 0 3rem 5rem -2rem rgba(0, 0, 0, 0.6);
+}
+
+.montserrat {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.montserrat-large {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.centerize {
+  margin: auto;
+  width: 50%;
+}
+
+.list {
+  border: 3px solid gray;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  margin: 3px;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.list:hover {
+  cursor: pointer;
+}

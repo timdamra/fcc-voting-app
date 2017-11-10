@@ -1,0 +1,28 @@
+doctype html
+html
+  head
+    title Vote-Fcc
+    meta(name='viewport' content='width=device-width initial-scale=1')
+    link(rel="stylesheet", href="/css/materialize.css")
+    link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Black+Ops+One|Montserrat")
+    link(rel="stylesheet", href="/css/font.css")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.js")
+  body
+    nav
+      div(class="black nav-wrapper")
+        a(href="#", class="brand-logo center blackops")  FCC Vote App
+        ul(class="left hide-on-med-and-down")
+          #user
+            if user != null
+              li
+                a(href="/") Home
+              li
+                a(href="/profile") Profile
+            else
+              li
+                a(href="/") Home
+              li
+                a(href="/auth/twitter") Twitter Login
+    div(class='container')
+      block content
+    script(src="/js/config.js")

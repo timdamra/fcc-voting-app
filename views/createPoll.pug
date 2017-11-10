@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  h5 Enter the names of the options you would like to have polled in the second input below, seperated by comma's
+  div(class="row")
+    form(class="col s12", action="/profile/create", method="post")
+      div(class="input-field col s6")
+        input(placeholder="Title of poll", class="validate", name="title")
+        textarea(placeholder="Options go here", class="materialize-textarea", name="options")
+        button(class="center-align waves-effect waves-teal btn-flat montserrat-large", href="/profile/create") Submit
